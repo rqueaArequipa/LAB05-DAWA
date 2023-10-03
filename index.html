@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Chat con Socket.IO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</head>
+
+<body>
+    <div id="contenedor-chat">
+        <div id="chat">
+            <div id="mensajes"></div>
+        </div>
+        <div id="barra-mensaje">
+            <input type="text" id="mensaje" autocomplete="off" placeholder="Escribe un mensaje...">
+            <input type="text" id="nombre" placeholder="Tu nombre">
+            <input type="file" id="imagenPerfil" accept="image/*">
+
+            <button id="enviar">Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>

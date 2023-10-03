@@ -1,0 +1,184 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* styles.css */
+
+#contenedor-chat {
+    max-width: 700px; /* Cambiado de 375px a 600px */
+    width: 100%; /* Añadido para mantener la responsividad */
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+#chat {
+    flex: 1;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    padding: 10px;
+    max-height: 90vh; /* Ajusta la altura máxima a un 70% de la altura visible */
+}
+
+
+#mensajes {
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje {
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    background-color: #f9f9f9; /* Fondo sutil para los mensajes */
+    border: 1px solid #ccc; /* Borde para separar los mensajes */
+}
+
+.mensaje.recibido {
+    background-color: #ffffff;
+    align-self: flex-start;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.mensaje.enviado {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.mensaje .nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mensaje .contenido {
+    font-size: 16px;
+    color: #333; /* Color del texto */
+}
+
+.mensaje .contenido a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: underline; /* Subraya los enlaces */
+}
+
+#barra-mensaje {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+}
+
+#mensaje {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#enviar {
+    background-color: #4caf50; /* Cambia el color del botón */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición para efecto visual */
+}
+
+#enviar:hover {
+    background-color: #45a049; /* Cambia el color al pasar el ratón */
+}
+
+/* styles.css */
+
+#barra-mensaje {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+}
+
+#mensaje,
+#nombre,
+#imagenPerfil,
+#enviar {
+    flex: 1;
+    margin: 5px; /* Añadido un pequeño margen entre los elementos */
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#enviar {
+    background-color: #4941e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s;
+}
+
+#enviar:hover {
+    background-color: #000000;
+}
+
+
+#imagenPerfil {
+    /* display: none; */ /* Esto estaba ocultando el input de tipo file */
+    margin: 5px; /* Añadido un pequeño margen entre los elementos */
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/* styles.css */
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left; /* Hace que el avatar flote a la izquierda */
+    margin-right: 10px; /* Añadido margen entre el avatar y el contenido */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-mensaje {
+    overflow: hidden;
+}
+
+.nombre, .contenido, .hora {
+    margin-bottom: 5px;
+}
+
+.hora {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Limpiar el float para evitar problemas de diseño */
